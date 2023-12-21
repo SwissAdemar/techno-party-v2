@@ -17,12 +17,12 @@
     <div class="w-full min-h-screen flex justify-center items-center font-orbitron">
         <div class="absolute text-white self-start top-20 grid gap-10">
             <p class="text-white lg:text-6xl md:text-5xl text-2xl">29.12</p>
-            <button class="md:text-2xl lg:text-2xl text-md cursor-pointer" id="play-btn" onclick="playAudio()">
+            <button class="md:text-2xl text-md cursor-pointer" id="play-btn" onclick="playAudio()">
                 <i id="icon" class="fa-solid fa-play"></i>
             </button>
         </div>
-        <div class=" grid grid-cols-2 text-white">
-            <div id="timer" class="flex gap-4 flex-col lg:flex-row md:flex-row">
+        <div class=" grid grid-rows-2 md:grid-cols-2 gap-6 text-white">
+            <div id="timer" class="flex gap-4">
                 <div>
                     <p id="days" class="text-3xl">00</p>
                     <span class="text-sm">Days</span>
@@ -42,8 +42,10 @@
             </div>
             <div class="grid place-items-center">
                 <ul class="list-disc text-sm">
-                    <li>23:00 - before</li>
-                    <li>01:00 - cel</li>
+                    <p>29.12</p>
+                    <li class="ml-4">23:00 - before</li>
+                    <p>30.12</p>
+                    <li class="ml-4">01:00 - cel</li>
                 </ul>
             </div>
         </div>
